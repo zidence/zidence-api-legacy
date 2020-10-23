@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node index",
     "dev": "nodemon index",
+    "migrate": "sequelize db:migrate",
+    "seed": "sequelize db:seed:all",
     "lint": "eslint . --ext .js",
     "postinstall": "./postinstall.sh"
   },
