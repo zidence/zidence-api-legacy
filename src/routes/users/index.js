@@ -1,9 +1,8 @@
 const express = require('express')
 const router = express.Router()
+const user = require('./middlewares')
 
 /* GET users listing. */
-router.get('/', (req, res) => {
-  res.send('respond with a resource')
-})
+router.get('/', user.getAll)
 
 module.exports = router

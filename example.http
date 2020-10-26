@@ -1,2 +1,15 @@
 ### Home
 GET http://localhost:3000/
+
+### List users
+GET http://localhost:3000/users
+
+### Register new user
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "username": "tester",
+  "email": "tester@megah.com",
+  "password": "megah-property-creator"
+}
