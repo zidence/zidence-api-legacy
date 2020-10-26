@@ -17,7 +17,10 @@ module.exports = async (req, res, next) => {
     } catch (error) {
       res
         .status(500)
-        .send({ message: 'Error comparing password hash', error: error })
+        .send({
+          message: 'Error comparing password hash',
+          error: error.toString(),
+        })
     }
   }
 }
