@@ -1,7 +1,6 @@
 const models = require('../../../models')
 const User = models.User
 const bcrypt = require('bcrypt')
-const { registerNewUser } = require('.')
 
 module.exports = async (req, res) => {
   const { username, email, password } = req.body
@@ -26,11 +25,9 @@ module.exports = async (req, res) => {
 
     await User.create(newUser)
 
-    res
-      .status(200)
-      .send({
-        message: 'User successfully registered',
-        data: { username: username, email: email },
-      })
+    res.status(200).send({
+      message: 'User successfully registered',
+      data: { username: username, email: email },
+    })
   }
 }

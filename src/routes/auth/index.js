@@ -2,14 +2,6 @@ const express = require('express')
 const router = express.Router()
 const auth = require('./middlewares')
 
-// GET authenticated user data
-// router.get(
-//   '/profile',
-//   auth.isAuthenticated,
-//   auth.isAuthorized,
-//   auth.getAuthenticatedUser
-// )
-
 // Register new user
 router.post(
   '/register',
@@ -27,6 +19,14 @@ router.post(
 )
 
 // User logout
-// router.post('/logout', auth.isAuthenticated, auth.deauthenticateUser)
+router.post('/logout', auth.isAuthenticated, auth.deauthenticateUser)
+
+// GET authenticated user data
+router.get(
+  '/:username',
+  auth.isAuthenticated,
+  auth.isAuthorized,
+  auth.getAuthenticatedUser
+)
 
 module.exports = router
