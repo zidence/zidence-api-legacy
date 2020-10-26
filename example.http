@@ -13,3 +13,12 @@ Content-Type: application/json
   "email": "tester@megah.com",
   "password": "megah-property-creator"
 }
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "tester@megah.com",
+  "password": "megah-property-creator"
+}

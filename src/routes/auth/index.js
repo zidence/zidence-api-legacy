@@ -19,12 +19,12 @@ router.post(
 )
 
 // User Login
-// router.post(
-//   '/login',
-//   auth.isEmailRegistered,
-//   auth.isPasswordCorrect,
-//   auth.authenticateUser
-// )
+router.post(
+  '/login',
+  auth.isEmailRegistered,
+  auth.isPasswordCorrect,
+  auth.authenticateUser
+)
 
 // User logout
 // router.post('/logout', auth.isAuthenticated, auth.deauthenticateUser)
