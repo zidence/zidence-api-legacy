@@ -27,12 +27,12 @@ This project is Megah Property's REST API. Built using express with ORM sequeliz
 
 ### Auth
 
-| Endpoint         | HTTP   | Description                   | Header                      |
-| ---------------- | ------ | ----------------------------- | --------------------------- |
-| `/auth/register` | `POST` | Register new user             |                             |
-| `/auth/login`    | `POST` | Login to existing user        | Authorization: bearer token |
-| `/auth/profile`  | `GET`  | Show authenticated user data  | Authorization: bearer token |
-| `/auth/logout`   | `POST` | Logout the authenticated user | Authorization: bearer token |
+| Endpoint          | HTTP   | Description                   | Header                      |
+| ----------------- | ------ | ----------------------------- | --------------------------- |
+| `/auth/register`  | `POST` | Register new user             |                             |
+| `/auth/login`     | `POST` | Login to existing user        | Authorization: bearer token |
+| `/auth/logout`    | `POST` | Logout the authenticated user | Authorization: bearer token |
+| `/auth/:username` | `GET`  | Show authenticated user data  | Authorization: bearer token |
 
 ### Users
 
