@@ -22,3 +22,15 @@ Content-Type: application/json
   "email": "tester@megah.com",
   "password": "megah-property-creator"
 }
+
+### Logout
+POST http://localhost:3000/auth/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0ZXIiLCJlbWFpbCI6InRlc3RlckBtZWdhaC5jb20iLCJpYXQiOjE2MDM3MjY2MDMsImV4cCI6MTYwMzk4NTgwM30.IqsQujCqlu-b9g4rW4k5m4hzcs7uY44jufVW8JrnCqA
+
+### Get authenticated user data
+GET http://localhost:3000/auth/tester
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0ZXIiLCJlbWFpbCI6InRlc3RlckBtZWdhaC5jb20iLCJpYXQiOjE2MDM3MjY2MDMsImV4cCI6MTYwMzk4NTgwM30.IqsQujCqlu-b9g4rW4k5m4hzcs7uY44jufVW8JrnCqA
+
+
+### Get list of items
+GET http://localhost:3000/items
