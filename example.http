@@ -34,3 +34,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hb
 
 ### Get list of items
 GET http://localhost:3000/items
+X-API-Key: megah-property-api-key
+
+### Post array of items
+POST http://localhost:3000/items
+X-API-Key: megah-property-api-key
+Content-Type: application/json
+
+{
+  "items": [
+    {"item": "Rumah Pohon", "userId": 1},
+    {"item": "Studio Musik", "userId": 3},
+    {"item": "McDonalds", "userId": 9}
+  ]
+}
