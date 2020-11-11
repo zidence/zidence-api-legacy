@@ -1,6 +1,6 @@
-# Megah Property API
+# Zidence API
 
-> API and database for Megah Property Project using Express and PostgreSQL
+> API and database for Zidence Project using Express and PostgreSQL
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## TLDR
 
-This project is Megah Property's REST API. Built using express with ORM sequelize PostgreSQL. The migration and seed are set with steps written in this README. The auth endpoints is implemented with hashed password using bcrypt and token using jsonwebtoken. Other endpoints is also secured by API-Key.
+This project is Zidence's REST API. Built using express with ORM sequelize PostgreSQL. The migration and seed are set with steps written in this README. The auth endpoints is implemented with hashed password using bcrypt and token using jsonwebtoken. Other endpoints is also secured by API-Key.
 
 ## API Endpoints
 
